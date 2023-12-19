@@ -1,3 +1,4 @@
+import 'package:dicoding_subscriptions/common.dart';
 import 'package:dicoding_subscriptions/home.dart';
 import 'package:flutter/material.dart';
 
@@ -25,6 +26,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: const HomePage(),
     );
   }
